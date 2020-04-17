@@ -1,8 +1,14 @@
-name: gtk-3-test
-adopt-info: gtk3-widget-factory
-summary: gtk-3-test
+name: gtk-3-examples
+adopt-info: gtk-3-examples
+summary: GTK 3 Examples
 description: |
-  gtk-3-test
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the example files and a demonstration program
+ for GTK3.
 
 base: core18
 grade: stable
@@ -20,7 +26,7 @@ slots:
     name: org.gtk.IconBrowser
 
 parts:
-  gtk3-widget-factory:
+  gtk-3-examples:
     plugin: nil
     stage-packages:
       - gtk-3-examples
